@@ -5,7 +5,7 @@ const initialState = {
     posts: []
 }
 
-export const taskSlice = createSlice({
+export const postSlice = createSlice({
     name: 'posts',
     initialState,
     reducers: {
@@ -24,6 +24,6 @@ export const taskSlice = createSlice({
     }
 })
 
-export const {deletePosts} = taskSlice.actions
+export const {deletePosts} = postSlice.actions
 
-export default taskSlice.reducer;
+export default postSlice.reducer;

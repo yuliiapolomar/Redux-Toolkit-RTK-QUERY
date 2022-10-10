@@ -5,7 +5,6 @@ import postApi, { useGetAllPostsQuery } from './app/api/posts';
 function App() {
 
 const {posts} = useSelector(state => state.posts)
-
 useGetAllPostsQuery()
 
 const [deletePost, {}] = postApi.useDeletePostMutation();
